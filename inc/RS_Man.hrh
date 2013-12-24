@@ -1,0 +1,27 @@
+/*
+ ============================================================================
+ Name		: RS_Man.hrh
+ Author	  : jinhuafeng
+ Copyright   : RS-Man Version 1.0
+ Build v20100730_60 
+
+ Copyright (c) 2009 Jinhuafeng . All rights reserved.
+ Description : This file contains declarations for constants of RS_Man.
+ The file can be included in C++ or resource file.
+ ============================================================================
+ */
+#ifndef __RS_MAN_HRH__
+#define __RS_MAN_HRH__
+
+#define _UID3 0xE2A1DCB7
+
+// RS_Man enumerate command codes
+enum TRS_ManIds
+{
+    ECommand1 = 0x6001, // start value must not be 0
+    ECommand2,
+    EHelp,
+    EAbout
+};
+
+#endif // __RS_MAN_HRH__

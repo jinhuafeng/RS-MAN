@@ -1,0 +1,30 @@
+/*
+============================================================================
+ Name		: RS_Man.rss
+ Author	  : jinhuafeng
+ Copyright   : RS-Man Version 1.0
+Build v20100730_60 
+
+Copyright (c) 2009 Jinhuafeng . All rights reserved.
+ Description : This file contains the application registration resource.
+============================================================================
+*/
+
+#include "RS_Man.hrh"
+#include "RS_Man.rls"
+#include <appinfo.rh>
+#include <RS_Man_0xE2A1DCB7.rsg>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 _UID3
+
+RESOURCE APP_REGISTRATION_INFO
+	{
+	app_file="RS_Man_0xE2A1DCB7";
+	localisable_resource_file =  qtn_loc_resource_file_1;
+	localisable_resource_id = R_LOCALISABLE_APP_INFO;
+
+	embeddability=KAppNotEmbeddable;
+	newfile=KAppDoesNotSupportNewFile;
+	}
+

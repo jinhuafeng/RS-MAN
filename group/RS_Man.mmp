@@ -1,0 +1,87 @@
+/*
+============================================================================
+ Name		: RS_Man.mmp
+ Author	  : jinhuafeng
+ Copyright   : RS-Man Version 1.0
+Build v20100730_60 
+
+Copyright (c) 2009 Jinhuafeng . All rights reserved.
+ Description : This is the project specification file for RS_Man.
+============================================================================
+*/
+
+
+TARGET			RS_Man_0xE2A1DCB7.exe
+TARGETTYPE		exe
+UID		  0x100039CE 0xE2A1DCB7
+
+EPOCSTACKSIZE 0x14000
+CAPABILITY NetworkServices ReadDeviceData ReadUserData SwEvent WriteDeviceData
+SOURCEPATH		..\src
+SOURCE			RS_Man.cpp
+SOURCE			RS_ManApplication.cpp
+SOURCE			RS_ManContainer.cpp RS_ManAppUi.cpp
+SOURCE			RS_ManDocument.cpp
+
+
+SOURCEPATH		..\data
+
+START RESOURCE	RS_Man.rss
+HEADER
+TARGET RS_Man_0xE2A1DCB7
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE	RS_Man_reg.rss
+TARGET RS_Man_0xE2A1DCB7_reg
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+
+START BITMAP RS_Man.mbm
+	TARGETPATH resource\apps
+	HEADER
+	SOURCEPATH ..\gfx
+	SOURCE c24 BackGround.bmp
+	SOURCE c24 SheepBG.bmp 
+	SOURCE c24 ResourceMap.bmp 
+END
+
+START BITMAP Icon.mbm
+ HEADER
+ TARGETPATH \resource\apps
+ SOURCEPATH ..\gfx
+ SOURCE c24 icon.bmp
+ SOURCE c8  icon_mask.bmp
+END
+
+
+
+USERINCLUDE	   ..\inc
+USERINCLUDE    ..\help
+
+SYSTEMINCLUDE	 \epoc32\include
+
+LIBRARY		   euser.lib
+LIBRARY		   apparc.lib
+LIBRARY		   cone.lib
+LIBRARY		   eikcore.lib
+LIBRARY		   avkon.lib
+LIBRARY		   commonengine.lib
+LIBRARY		   efsrv.lib 
+LIBRARY		   estor.lib
+LIBRARY        aknnotify.lib
+LIBRARY        hlplch.lib fbscli.lib gdi.lib bitgdi.lib ws32.lib eiksrv.lib mediaclientaudio.lib hwrmvibraclient.lib touchfeedback.lib profileeng.lib eikctl.lib bafl.lib eikcoctl.lib eikcdlg.lib etel3rdparty.lib egul.lib
+ 
+
+LANG SC
+
+VENDORID	  	  0
+SECUREID		  0xE2A1DCB7
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+// End of File
+SOURCEPATH ..\src
+SOURCE CGfxTimer.cpp BitMapPosition.cpp WorldObject.cpp BoardQueue.cpp ProbabilityTable.cpp Drawer.cpp ActionAnalyst.cpp MenuContainer.cpp ButtonElement.cpp Data.cpp OptionContainer.cpp PausedContainer.cpp AwardContainer.cpp HelpContainer.cpp AudioPlayer.cpp MotionElement.cpp BitmapNum.cpp PlayerInfo.cpp CallsMonitor.cpp TextDisplayer.cpp AboutContainer.cpp

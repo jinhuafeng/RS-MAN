@@ -1,0 +1,42 @@
+/*
+============================================================================
+ Name       : RS_Man.rls
+ Author   : jinhuafeng
+ Copyright   : RS-Man Version 1.0
+Build v20100730_60 
+
+Copyright (c) 2009 Jinhuafeng . All rights reserved.
+ Description : This is a localisation file for RS_Man
+                A .rls file is the one and only place where the logical
+                strings to be localised are defined. 
+============================================================================
+*/
+
+//  LOCALISATION STRINGS
+
+// Caption string for app.
+#define qtn_caption_string "RS-Man"
+
+// First item in "Options" menu pane
+#define qtn_command1 "Message"
+
+// Second item in "Options" menu pane
+#define qtn_command2 "Message from file"
+
+#define qtn_help "Help"
+
+#define qtn_about "About"
+
+// Third item in "Options" menu pane
+#define qtn_exit "Exit"
+
+// When user requests ECommand1 event, text below is shown.
+#define qtn_command1_text "RS-Man 1.0"
+
+#define qtn_loc_resource_file_1 "\\resource\\apps\\RS_Man_0xE2A1DCB7"
+
+#define qtn_about_dialog_title "About"
+
+#define qtn_about_dialog_text "RS-Man Version 1.0.0\n\nAuthor: jinhuafeng\n\nSupport: j.hf@yeah.net\n\n(c) RS-Man Version 1.0\r\nBuild v20100730_60 \r\n\r\nCopyright (c) 2009 Jinhuafeng . All rights reserved."
+
+// End of File

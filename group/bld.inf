@@ -1,0 +1,25 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : jinhuafeng
+ Copyright   : RS-Man Version 1.0
+Build v20100730_60 
+
+Copyright (c) 2009 Jinhuafeng . All rights reserved.
+ Description : This file provides the information required for building the
+				whole of a RS_Man.
+============================================================================
+*/
+
+
+PRJ_PLATFORMS
+WINSCW ARMV5 GCCE
+
+PRJ_MMPFILES
+
+gnumakefile icons_scalable_dc.mk
+
+gnumakefile ..\help\build_help.mk
+
+RS_Man.mmp
+
